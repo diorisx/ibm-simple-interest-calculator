@@ -1,1 +1,1 @@
-# coding-project-template
+# Here goes the project!
