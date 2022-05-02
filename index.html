@@ -7,10 +7,16 @@
         <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
 
-        <button onclick="compute()">Compute</button>
+        Interest Rate <input type="range" step="0.1"    
+            value="0.0" oninput="noYear(this.value)" id="rate"> 
+                <label id="int_rate">0.0% </label> <br/>
+
+        No. of Years <input type="number" value="1"  min="1" step="1"  id="years">  <br/>
+
+        <button onclick="compute()">Compute Interest</button>
+
+        <span id="result"></span><br>
+
     </body>
 </html>
